@@ -1,0 +1,41 @@
+# Kickstarting with Excel
+
+## Overview of Project
+Utilizing excel techniques, an anylysis was conducted on the outcomes of the kickstarter for various plays and start up media. Steps were used to understand the outcomes based on the launch date, parent categories, goals, and pledges. Utilizing the analytical tools at our disposal we were able to gain insight into how the visual statistical data about the performance of the campaigns.
+
+### Purpose- The purpose of this project was to assist Louise in identifying all the relevant information that can provide insight into how the Kickstarter campaigns have been performing globally over a 3-year period.
+
+## Analysis and Challenges
+I performed my analysis by utilizing filter, sort, and pivot capabilities. Formulas for standard deviation, and statistical analysis were conducted as well to determine, mean, average, and median data. 
+
+ 
+
+Formulas Used:
+1. To convert date and years into a readable format the Time Conversion formula was used: =(((J2/60)/60)/24+DATE(1970,1,1))
+2. To calculate the percentages of kickstarters funded I used the Calculating Percentages formula to determine the percentage of funds by rounding to zero: =ROUND(E11/D11*100,0)
+3. To pull sample data to understand the pledges, average donation, and number of backers I utilized the VLOOKUP formula to quickly identify the information needed for analysis. =VLOOKUP(A2, Kickstarter!B:E, 4, FALSE)
+
+
+### Analysis of Outcomes Based on Launch Date
+1. Based on the analysis of outcomes failed kickstarter pledges account for 36% of the total kickstarter campaign. Essentially, 36% of most kickstarter campaigns are most likely to fail if they haven’t reached their funding goals by October.
+
+### Analysis of Outcomes Based on Goals
+1. Looking solely at pledges greater than 50000, over half of the kickstarter campaigns were successful.
+
+### Challenges and Difficulties Encountered
+1. The challenges encountered during this challenge were minimal. The biggest difficulty was understanding the “CountIfs” formula to ensure the criteria was defining the relevant data.
+
+## Results
+
+- What are two conclusions you can draw about the Outcomes based on Launch Date?
+1. Based on the launch date analysis it appears that May and June were the most successful month for the Kickstarter campaign for Theatre crowdfunding.
+2.Based on the launch date analysis it appears that cancellations for Kickstarter remained minimal. 
+
+- What can you conclude about the Outcomes based on Goals?
+1. That 64% of kickstarters with goals of less than 1000 have failed.
+
+- What are some limitations of this dataset?
+1. We have not taken into consideration any other data points that would explain why kickstarters with pledges between 35000 and 50000 pledges fail.
+
+- What are some other possible tables and/or graphs that we could create?
+1. Pie charts to visually demonstrate what percentage of rates account for total projects. Stacked Barcharts could also be utilized to demonstrate contrast between failure and success. And Trend Analysis charts can be used to demonstrate the performance of our goals over time.
